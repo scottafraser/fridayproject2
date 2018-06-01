@@ -18,19 +18,15 @@ $(document).ready(function() {
 
     if (result <= 5) {
       hideAll();
-      $("#caddy").show();
+      alert("ruby!");
       result.empty();
     } else if (result > 5 && result <= 10) {
       hideAll();
-      $("#zissou").show();
+      alert("css/react");
       result.empty();
     } else if (result > 10 && result <= 15) {
       hideAll();
-      $("#groundhog").show();
-      result.empty();
-    } else if (result > 15 && result <= 20){
-      hideAll();
-      $("#ghost").show();
+      alert("c#.net");
       result.empty();
     } else {
       hideAll();
