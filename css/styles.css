@@ -1,3 +1,13 @@
+.jumbotron {
+  background-color: white;
+  width: 100%;
+  border-bottom: lightgray solid;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  background-image: url(../img/funky-lines.png);
+}
 
 #resultModal {
   image-orientation: center;
@@ -7,9 +17,9 @@
 
 form#buttons {
   min-width: 215px;
-  max-width: 500px;
-  margin-left: 25%;
-  margin-right: 25%;
+  max-width: 600px;
+  margin-left: 20%;
+  margin-right: 20%;
 
 }
 
@@ -30,7 +40,7 @@ p.card-text {
 
 #buttons {
   padding: 20px;
-  margin: 10px;
+
 }
 
 #resultModal {
