@@ -6,160 +6,194 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
+  <link rel="shortcut icon" href="img/littlelogo_1cu_icon.ico" />
   <title>Epicodus track</title>
   </head>
   <body>
     <div class="container">
       <div class="top">
-        <h1>What track should I take!?</h1>
+        <img src="img/logo.png" class=".img-fluid" alt="logo">
+        <br>
+        <br>
+        <h1><em>What Track Is Right For You?</em></h1>
+        <br>
+        <p>Epicodus students must decide which track they would like to pursue before they enroll. While all languages have similarities, and switching between languages and platforms is very common in both internships and jobs, applicants should still choose the track they wish to complete with care. Take the quiz below and find out what track you are best suited for!</p>
       </div>
       <!-- questions -->
       <form id="buttons" action="index.html" method="post">
-        <div class="question1">
-          <h2>What kind of computer are you using right now?</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q1" value="1">
-              A computer? I'm on my phone.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q1" value="2">
-              A mac with a bunch of stickers on it
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q1" value="3">
-              A custom built gaming machine
-            </label>
-          </div>
-        </div>
-        <div class="question2">
-          <h2>What do you want to do with coding?</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q2" value="1">
-              Build sleek web apps
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q2" value="2">
-              I'm more interested in the front end
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q2" value="3">
-              Backend development all the way, baby!
-            </label>
-          </div>
-        </div>
-        <div class="question3">
-          <h2>What is your favorite website?</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q3" value="1">
-              Airbnb is my fav.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q3" value="2">
-              Instagram, like all the cool kids.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q3" value="3">
-              Stackoverflow, duh.
-            </label>
-          </div>
-        </div>
-        <div class="question4">
-          <h2>What kind of leaner are you?</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q4" value="1">
-              Hands on, learning by doing.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q4" value="2">
-              Very visual, I'm often doodeling.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q4" value="3">
-              Give me the textbook and I'll take lots of notes.
-            </label>
-          </div>
-        </div>
-        <div class="question5">
-          <h2>Who is your favorite "tech guy"?</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q5" value="1">
-              Jeff Bezos is my dude.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q5" value="2">
-              Mark Zuckerburg is a livin legened.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="q5" value="3">
-              Bill Gates started it all!
-            </label>
-          </div>
-        </div>
-        <!-- Button trigger modal -->
-        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#get">
-          Place Order
-        </button>
-      </form>
-      <!-- modal -->
-      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">You should take...</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="card" id="rubyResult" style="width: 100%;">
-                <img class="resultPic" src="img/ruby.png" alt="ruby image">
-                <div class="card-body">
-                  <h5 class="card-title">Ruby/Rails</h5>
-                  <p class="card-text">Ruby/rails.</p>
+        <div class="quiz">
+          <div class="card bg-light mb-3" id="box">
+            <div class="card-body">
+              <div class="question1">
+                <h5 class="card-header">What kind of computer are you using right now?</h5 class="card-header">
+                <br>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q1" value="1">
+                    A computer? I'm on my phone.
+                  </label>
                 </div>
-              </div>
-              <div class="card" id="cssResult" style="width: 100%;">
-                <img class="resultPic" src="img/react.png" alt="react image">
-                <div class="card-body">
-                  <h5 class="card-title">css/react/h5>
-                  <p class="card-text">css/react</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q1" value="2">
+                    A mac with a bunch of stickers on it
+                  </label>
                 </div>
-              </div>
-              <div class="card" id="cSharpresult" style="width: 100%;">
-                <img class="resultPic" src="img/c-sharp.png" alt="cSharpimage">
-                <div class="card-body">
-                  <h5 class="card-title">C#/.NET</h5>
-                  <p class="card-text">C#</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q1" value="3">
+                    A custom built gaming machine
+                  </label>
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+          <div class="card bg-light mb-3" id="box">
+            <div class="card-body">
+              <div class="question2">
+                <h5 class="card-header">What do you want to do with coding?</h5 class="card-header">
+                <br>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q2" value="1">
+                    Build sleek web apps
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q2" value="2">
+                    I'm more interested in the front end
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q2" value="3">
+                    Backend development all the way, baby!
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light mb-3" id="box">
+            <div class="card-body">
+              <div class="question3">
+                <h5 class="card-header">What is your favorite website?</h5 class="card-header">
+                <br>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q3" value="1">
+                    Airbnb is my fav.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q3" value="2">
+                    Instagram, like all the cool kids.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q3" value="3">
+                    Stackoverflow, duh.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light mb-3" id="box">
+            <div class="card-body">
+              <div class="question4">
+                <h5 class="card-header">What kind of leaner are you?</h5 class="card-header">
+                <br>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q4" value="1">
+                    Hands on, learning by doing.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q4" value="2">
+                    Very visual, I'm often doodeling.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q4" value="3">
+                    Give me the textbook and I'll take lots of notes.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light mb-3" id="box">
+            <div class="card-body">
+              <div class="question5">
+                <h5 class="card-header">Who is your favorite "tech guy"?</h5 class="card-header">
+                <br>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q5" value="1">
+                    Jeff Bezos is my dude.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q5" value="2">
+                    Mark Zuckerburg is a livin legened.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q5" value="3">
+                    Bill Gates started it all!
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#get">
+            Submit Your Answers
+          </button>
+        </form>
+        <!-- modal -->
+        <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">You should take...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="card" id="rubyResult" style="width: 100%;">
+                  <img class="resultPic" src="img/ruby.png" alt="ruby image">
+                  <div class="card-body">
+                    <h5 class="card-title">Ruby/Rails</h5>
+                    <p class="card-text"> Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus graduates include New Relic, LivingSocial, and SpendWell. </p>
+                  </div>
+                </div>
+                <div class="card" id="cssResult" style="width: 100%;">
+                  <img class="resultPic" src="img/react.png" alt="react image">
+                  <div class="card-body">
+                    <h5 class="card-title">CSS/React</h5>
+                    <p class="card-text"> React is a JavaScript library used to create dynamic, interactive user interfaces. It allows a site to quickly update many different elements at once, without reloading the page.</p>
+                  </div>
+                </div>
+                <div class="card" id="cSharpresult" style="width: 100%;">
+                  <img class="resultPic" src="img/c-sharp.png" alt="cSharpimage">
+                  <div class="card-body">
+                    <h5 class="card-title">C#/.NET</h5>
+                    <p class="card-text"> C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
-.picDisplay img {
-  display: none;
+
+#box {
+  margin: 20px;
 }
 
 .container {
@@ -19,8 +20,20 @@
   margin: none;
 }
 
-.card {
-  align-self: center;
+h5.modal-body {
+  text-align: center;
+}
+
+p.card-text {
+  text-align: left;
+}
+
+#buttons {
+  padding: 20px;
+  margin: 10px;
+}
+
+#resultModal {
   width: 100%;
   margin: none;
 }

@@ -34,7 +34,7 @@ $(document).ready(function() {
       $('#resultModal').modal('show')
       $('#cSharpresult').show();
     } else {
-      alert("you missed one!");
+      alert("Uh oh, looks like you missed something.");
     }
 
   });
