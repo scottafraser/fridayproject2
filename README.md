@@ -32,7 +32,9 @@ $ git clone https://github.com/scottafraser/fridayproject2.git
 ## Authors
 
 Scott Fraser
+
 907-428-8072
+
 [@ScottFraser](https://scottafraser@yahoo.com)
 
 ## Github
