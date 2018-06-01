@@ -5,6 +5,14 @@
   margin: none;
 }
 
+form#buttons {
+  min-width: 215px;
+  max-width: 500px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
 .modal-body {
   text-align: center;
   image-orientation: center;
