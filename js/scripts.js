@@ -1,9 +1,8 @@
-// function hideAll() {
-//   $("#caddy").hide();
-//   $("#zissou").hide();
-//   $("#groundhog").hide();
-//   $("#ghost").hide();
-// }
+function hideAll() {
+  $("#cssResult").hide();
+  $("#cSharpresult").hide();
+  $("#rubyResult").hide();
+}
 
 $(".btn btn-primary").click(function(){
 });
@@ -21,14 +20,17 @@ $(document).ready(function() {
 
     if (result <= 5) {
       console.log("ruby");
+      hideAll();
       $('#rubyResult').show();
       $('#resultModal').modal('show')
     } else if (result > 5 && result <= 10) {
       console.log("css");
+      hideAll();
       $('#resultModal').modal('show')
       $('#cssResult').show();
     } else if (result > 10 && result <= 15) {
       console.log("c#");
+      hideAll();
       $('#resultModal').modal('show')
       $('#cSharpresult').show();
     } else {
