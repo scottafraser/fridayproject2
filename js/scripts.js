@@ -1,9 +1,12 @@
-function hideAll() {
-  $("#caddy").hide();
-  $("#zissou").hide();
-  $("#groundhog").hide();
-  $("#ghost").hide();
-}
+// function hideAll() {
+//   $("#caddy").hide();
+//   $("#zissou").hide();
+//   $("#groundhog").hide();
+//   $("#ghost").hide();
+// }
+
+$(".btn btn-primary").click(function(){
+});
 
 $(document).ready(function() {
   $("form#buttons").submit(function(event){
@@ -17,25 +20,20 @@ $(document).ready(function() {
 
 
     if (result <= 5) {
-      hideAll();
-      alert("ruby!");
-      result.empty();
+      console.log("ruby");
+      $('#rubyResult').show();
+      $('#resultModal').modal('show')
     } else if (result > 5 && result <= 10) {
-      hideAll();
-      alert("css/react");
-      result.empty();
+      console.log("css");
+      $('#resultModal').modal('show')
+      $('#cssResult').show();
     } else if (result > 10 && result <= 15) {
-      hideAll();
-      alert("c#.net");
-      result.empty();
+      console.log("c#");
+      $('#resultModal').modal('show')
+      $('#cSharpresult').show();
     } else {
-      hideAll();
       alert("you missed one!");
     }
 
-
-
   });
 });
-
-// (result < 12 && result => 16)

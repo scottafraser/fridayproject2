@@ -11,121 +11,166 @@
   <body>
     <div class="container">
       <div class="top">
-
         <h1>What track should I take!?</h1>
       </div>
-
       <!-- questions -->
-
-              <form id="buttons" action="index.html" method="post">
-                <div class="question1">
-                  <h2>What kind of computer are you using right now?</h2>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q1" value="1">
-                      A computer? I'm on my phone.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q1" value="2">
-                      A mac with a bunch of stickers on it
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q1" value="3">
-                      A custom built gaming machine
-                    </label>
-                  </div>
+      <form id="buttons" action="index.html" method="post">
+        <div class="question1">
+          <h2>What kind of computer are you using right now?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="1">
+              A computer? I'm on my phone.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="2">
+              A mac with a bunch of stickers on it
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="3">
+              A custom built gaming machine
+            </label>
+          </div>
+        </div>
+        <div class="question2">
+          <h2>What do you want to do with coding?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="1">
+              Build sleek web apps
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="2">
+              I'm more interested in the front end
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="3">
+              Backend development all the way, baby!
+            </label>
+          </div>
+        </div>
+        <div class="question3">
+          <h2>What is your favorite website?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="1">
+              Airbnb is my fav.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="2">
+              Instagram, like all the cool kids.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="3">
+              Stackoverflow, duh.
+            </label>
+          </div>
+        </div>
+        <div class="question4">
+          <h2>What kind of leaner are you?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="1">
+              Hands on, learning by doing.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="2">
+              Very visual, I'm often doodeling.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="3">
+              Give me the textbook and I'll take lots of notes.
+            </label>
+          </div>
+        </div>
+        <div class="question5">
+          <h2>Who is your favorite "tech guy"?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="1">
+              Jeff Bezos is my dude.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="2">
+              Mark Zuckerburg is a livin legened.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="3">
+              Bill Gates started it all!
+            </label>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#get">
+          Place Order
+        </button>
+      </form>
+      <!-- modal -->
+      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Order Confirmation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" id="rubyResult" style="width: 18rem;">
+                <img class="resultPic" src="img/ruby.png" alt="ruby image">
+                <div class="card-body">
+                  <h5 class="card-title">Ruby/Rails</h5>
+                  <p class="card-text">Ruby/rails.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="question2">
-                  <h2>What do you want to do with coding?</h2>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q2" value="1">
-                      Build sleek web apps
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q2" value="2">
-                      I'm more interested in the front end
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q2" value="3">
-                      Backend development all the way, baby!
-                    </label>
-                  </div>
+              </div>
+              <div class="card" id="cssResult" style="width: 18rem;">
+                <img class="resultPic" src="img/react.png" alt="react image">
+                <div class="card-body">
+                  <h5 class="card-title">css/react/h5>
+                  <p class="card-text">css/react</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="question3">
-                  <h2>What is your favorite website?</h2>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q3" value="1">
-                      Airbnb is my fav.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q3" value="2">
-                      Instagram, like all the cool kids.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q3" value="3">
-                      Stackoverflow, duh.
-                    </label>
-                  </div>
+              </div>
+              <div class="card" id="cSharpresult" style="width: 18rem;">
+                <img class="resultPic" src="img/c-sharp.png" alt="cSharpimage">
+                <div class="card-body">
+                  <h5 class="card-title">C#/.NET</h5>
+                  <p class="card-text">C#</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="question4">
-                  <h2>What kind of leaner are you?</h2>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q4" value="1">
-                      Hands on, learning by doing.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q4" value="2">
-                      Very visual, I'm often doodeling.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q4" value="3">
-                      Give me the textbook and I'll take lots of notes.
-                    </label>
-                  </div>
-                </div>
-                <div class="question5">
-                  <h2>Who is your favorite "tech guy"?</h2>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q5" value="1">
-                      Jeff Bezos is my dude.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q5" value="2">
-                      Steve Jobs was a legend.
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="q5" value="3">
-                      Bill Gates started it all!
-                    </label>
-                  </div>
-                </div>
-                <button type="submit" name="button">Submit!</button>
-                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
-        </body>
-      </html>
+        </div>
+      </div>
+            <!-- code for modal -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
